@@ -1,3 +1,4 @@
+<?php
 {
                         class whatsAppBot{
                         //specify instance URL and token
@@ -139,4 +140,6 @@
                         $response = file_get_contents($url,false,$options);
                         file_put_contents('requests.log',$response.PHP_EOL,FILE_APPEND);}}
                         //execute the class when this file is requested by the instance
-                        new whatsAppBot();}
+                        new whatsAppBot();
+}
+>
