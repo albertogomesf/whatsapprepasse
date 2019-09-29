@@ -30,7 +30,7 @@ if($method == 'POST'){
                         if(!$message['fromMe']){
                         //check what command contains the first word and call the function
                         switch(mb_strtolower($text[0],'UTF-8')){
-                        case 'hi':  {$this->welcome($message['chatId'],false); break;}
+                        case 'Ok!':  {$this->welcome($message['chatId'],false); break;}
                             case 'chatid': {$this->showChatId($message['chatId']); break;}
                             case 'time':   {$this->time($message['chatId']); break;}
                             case 'me':     {$this->me($message['chatId'],$message['senderName']); break;}
