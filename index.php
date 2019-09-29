@@ -132,7 +132,7 @@ if($method == 'POST'){
 
                         public function sendMessage($chatId, $text){
                         $data = array('chatId'=>$chatId,'body'=>$text);
-                        $this->sendRequest('message',$data);}
+                        $this->sendRequest('sendMessage',$data);}
 
                         public function sendRequest($method,$data){
                         $url = $this->APIurl.$method.'?token='.$this->token;
